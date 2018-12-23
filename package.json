@@ -3,6 +3,9 @@
 {
   "name": "isometricity",
   "description": "Isometric city game",
-  "template": "vanilla"
+  "template": "parcel",
+  "devDependencies": {
+    "parcel-bundler": "latest"
+  }
 }
 
