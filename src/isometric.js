@@ -54,8 +54,6 @@ const Isometric = {
     })
 
     document.body.addEventListener('mousemove', function(e) {
-      console.dir(e)
-
       let pageX = e.pageX - self.tileColumnOffset / 2 - self.originX
       let pageY = e.pageY - self.tileRowOffset / 2 - self.originY
 
@@ -85,8 +83,8 @@ const Isometric = {
     const width = window.innerWidth
     const height = window.innerHeight
 
-    this.context.canvas.width = width
-    this.context.canvas.height = height
+    this.canvas.width = width
+    this.canvas.height = height
 
     this.originX = width / 2 - (this.Xtiles * this.tileColumnOffset) / 2
     this.originY = height / 2
